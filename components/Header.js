@@ -31,7 +31,7 @@ function Header() {
                     />
                 </div>
                     
-                <div onClick={() =>router.push('/')} className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">
+                <div onClick={() =>router.push('/')} className="relative w-8 lg:hidden flex-shrink-0 cursor-pointer">
                     <Image
                         src='https://links.papareact.com/jjm'
                         layout='fill'
@@ -57,7 +57,7 @@ function Header() {
                 {/* Right */}
                 <div className="flex items-center justify-end space-x-4">
                     <HomeIcon onClick={() => router.push('/')} className="navBtn" />
-                    <PlusCircleIcon onClick={() => setOpen(true)} className="nav-btn md:hidden cursor-pointer" />
+                    <PlusCircleIcon onClick={() => setOpen(true)} className="h-10 w-10 md:hidden cursor-pointer" />
 
                     {session ? (
                         <>
@@ -82,7 +82,7 @@ function Header() {
                                 onClick={signOut}
                                 src={session.user.image}
                                 alt='profile-pic'
-                                className="h-10 rounded-full cursor-pointer p-1 border-2 border-[#33ff00]"
+                                className="h-8 rounded-full cursor-pointer p-[1px] border-2 border-[#33ff00]"
                             />
                         </>
                         
