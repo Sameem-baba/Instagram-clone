@@ -87,7 +87,7 @@ function Header() {
                         </>
                         
                 ):(
-                    <button onClick={signIn('google',{ callbackUrl: 'https://www.sameembaba.tech/' })}>Sign In</button>
+                    <button onClick={signIn}>Sign In</button>
                 )}
 
                 </div>
