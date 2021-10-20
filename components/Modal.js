@@ -21,10 +21,10 @@ function Modal() {
 
         setLoading(true);
 
-        // Create a post and add to firestore 'posts' collection
-        // get the post ID for the newly created post
-        // upload the image to firestore storage with the post ID
-        // get the download URL from fb storage and update the orignal post with image 
+        // 1) Create a post and add to firestore 'posts' collection
+        // 2) get the post ID for the newly created post
+        // 3) upload the image to firestore storage with the post ID
+        // 4) get the download URL from fb storage and update the orignal post with image 
 
         const docRef = await addDoc(collection(db, 'posts'), {
             username: session.user.username,
